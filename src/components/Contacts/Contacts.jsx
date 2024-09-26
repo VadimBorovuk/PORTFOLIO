@@ -31,8 +31,8 @@ const Contacts = () => {
       >
         <BlockInfo
             title="email"
-            content="borowik.vadim@gmail.com"
-            link="mailto:borowik.vadim@gmail.com"
+            content="borovyk17vadym27@gmail.com"
+            link="mailto:borovyk17vadym27@gmail.com"
         />
         <BlockInfo
             title="Messanger"

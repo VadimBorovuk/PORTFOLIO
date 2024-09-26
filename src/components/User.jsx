@@ -51,7 +51,7 @@ const User = () => {
                     animate="visible"
                     className="flex items-start">
                   <a href={resumeFile} target="_blank" className="text-sm lg:text-lg px-3 py-2 lg:px-6 lg:py-3 bg-neutral-800 rounded-3xl tracking-tight mr-4">Download CV</a>
-                  <a href="mailto:borowik.vadim@gmail.com" target="_blank"
+                  <a href="mailto:borovyk17vadym27@gmail.com" target="_blank"
                      className="text-sm lg:text-lg px-3 py-2 lg:px-6 lg:py-3 bg-neutral-800 rounded-3xl tracking-tight">Send me</a>
                 </motion.div>
 
