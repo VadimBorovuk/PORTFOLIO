@@ -1,6 +1,6 @@
 import {FaHouseChimneyUser, FaInstagram} from "react-icons/fa6";
 import {Link} from "react-scroll";
-import logoUser from "../../assets/vb-svgrepo-com.svg";
+import logoUser from "../../assets/vb-logo.svg";
 import { FaBoxesStacked } from "react-icons/fa6";
 import { FcTimeline } from "react-icons/fc";
 import { GrProjects } from "react-icons/gr";

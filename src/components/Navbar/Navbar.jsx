@@ -1,4 +1,4 @@
-import logoUser from '../../assets/vb-svgrepo-com.svg'
+import logoUser from '../../assets/vb-logo.svg'
 import {NAVBAR_LINKS} from "../../constants/index.js";
 import {Link} from 'react-scroll'
 import {useEffect, useState} from "react";

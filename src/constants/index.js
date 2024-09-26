@@ -53,7 +53,7 @@ export const SOCIAL_LIST = [
   'telegram',
   'messenger',
   'instagram',
-    'firebase'
+  'firebase'
 ]
 
 export const NAVBAR_LINKS = [
@@ -130,7 +130,7 @@ export const PROJECTS = [
         "This portfolio is created to demonstrate my technical capabilities and to find new opportunities in the IT field.",
     technologies: ["react", "tailwind", "react-scroll", "framer-motion", "react-icons"],
     link: "https://portofolio-18e80.web.app/",
-    git: "https://github.com/VadimBorovuk/MovieApp_React"
+    git: "https://github.com/VadimBorovuk/PORTFOLIO"
   },
   {
     title: "Movie app",
