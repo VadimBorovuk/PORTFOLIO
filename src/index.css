@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    font-family: "Inter", sans-serif;
+}
+
+@layer utilities {
+    html {
+        scrollbar-width: thin; /* For Firefox */
+        scrollbar-color: #8f42be transparent; /* Thumb color and track color */
+    }
+    /* For Firefox */
+    ::-webkit-scrollbar {
+        width: 8px;
+        background-color: theme('colors.scrollbar-track');
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: theme('colors.scrollbar-thumb');
+        border-radius: 8px;
+        width: 8px;
+        border: 3px solid transparent;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: theme('colors.scrollbar-track');
+    }
+
+    /* For all browsers */
+    ::-webkit-scrollbar {
+        width: 8px;
+        background-color: theme('colors.scrollbar-track');
+    }
+}
