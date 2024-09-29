@@ -1,9 +1,10 @@
 import {Element} from 'react-scroll';
-import {TECHNOLOGIES_LIST} from "../constants/index.js";
+import {TECHNOLOGIES_LIST} from "../../constants/index.js";
 import {motion} from "framer-motion"
 import React, {useEffect, useRef, useState} from "react";
-import {getIconByStack} from "./UI/StackTechnologies.jsx";
-import Banner from "./Banner/Banner.jsx";
+import {getIconByStack} from "../UI/StackTechnologies.jsx";
+import Banner from "../Banner/Banner.jsx";
+import TechnologieBody from "./TechnologieBody.jsx";
 
 const variantsSettings = (duration) => ({
   initial: {y: -10},
@@ -76,16 +77,7 @@ const Technologies = () => {
                 className="text-center">
               <div
                   className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 lg:gap-10 w-[100px] sm:w-[400px] md:w-[500px] lg:w-full mx-auto">
-                {TECHNOLOGIES_LIST.map((item, idx) => <motion.div
-                        variants={variantsSettings(2.5 + idx + 2)}
-                        initial="initial"
-                        animate="animate"
-                        key={idx}
-                        className="flex items-start justify-center w-full rounded-2xl border-4 border-neutral-800 py-5 md:py-4">
-                      <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
-                        {getIconByStack(item)}
-                      </div>
-                    </motion.div>
+                {TECHNOLOGIES_LIST.map((item, idx) => (<TechnologieBody key={idx} idx={idx} item={item} variants={variantsSettings(2.5 + idx + 2)}/>)
                 )}
               </div>
             </motion.div>

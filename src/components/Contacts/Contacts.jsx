@@ -3,6 +3,8 @@ import {Element, Link} from 'react-scroll';
 import BlockInfo from "./BlockInfo.jsx";
 import {NAVBAR_LINKS} from "../../constants/index.js";
 import SocialTab from "../Navbar/socialTab.jsx";
+import Lottie from "lottie-react";
+import animationData from "../../assets/Contacts.json";
 
 const Contacts = () => {
   return (<Element className="lg:min-h-screen lg:py-20" key='contacts' name='contacts'>
@@ -14,13 +16,21 @@ const Contacts = () => {
           className="w-full lg:w-1/3 lg:pl-10"
       >
         <h1
-            className="text-center lg:text-left text-2xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-l from-white to-purple-500 bg-clip-text tracking-tight text-transparent"
+            className="py-10 lg:py-10 text-center lg:text-left text-2xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-l from-white to-purple-500 bg-clip-text tracking-tight text-transparent"
         >Contact me</h1>
-        <p className="text-center lg:text-left text-neutral-400 pt-10">
+        <p className="text-center lg:text-left text-neutral-400">
           Ready to take your digital presence to the next level? Whether you're looking to launch a new website, revamp
           an existing one, or need expert advice on the best web technologies, I'm here to help. Reach out to discuss
           your project, ask questions, or just say hello.
         </p>
+
+        <Lottie
+            animationData={animationData}
+            loop={true}
+            autoplay={true}
+            className="h-[250px] w-full"
+        />
+
       </motion.div>
 
       <motion.div

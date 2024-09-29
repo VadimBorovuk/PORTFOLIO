@@ -1,8 +1,10 @@
-import aboutPicture from '../assets/aboutPicture2.jpg'
 import {ABOUT_TEXT} from "../constants/index.js";
 import {Element} from 'react-scroll';
 import {motion} from "framer-motion"
 import Title from "./UI/Title.jsx";
+import animationData from "../assets/AboutMeSection.json";
+import Lottie from "lottie-react";
+
 
 const About = () => {
 
@@ -17,13 +19,20 @@ const About = () => {
             <Title value="About me"/>
           </motion.div>
           <div className="flex flex-wrap">
+
             <motion.div
                 whileInView={{opacity: 1, x: 0}}
                 initial={{opacity: 0, x: -100}}
                 transition={{duration: .5}}
-                className="w-full lg:w-2/5 lg:p-8">
+                className="w-full lg:w-2/5">
               <div className="flex items-start justify-center">
-                <img className="rounded-3xl" src={aboutPicture} alt="about me"/>
+                <Lottie
+                    animationData={animationData}
+                    loop={true}
+                    autoplay={true}
+                    className="h-[250px] md:h-[400px] w-full"
+                />
+                {/*<img className="rounded-3xl" src={aboutPicture} alt="about me"/>*/}
               </div>
             </motion.div>
             <motion.div

@@ -3,7 +3,7 @@ import {Element} from 'react-scroll';
 import {motion} from "framer-motion";
 
 import resumeFile from "../assets/resume/Frontend-2024_Eng_.pdf";
-import userPicture from '../assets/vadimBoroProfile.jpg';
+import userPicture from '../assets/vadimBoroProfile.webp';
 
 const variantsSettings = (delay) => ({
   hidden: {x: -100, opacity: 0},
@@ -20,7 +20,7 @@ const User = () => {
       <Element className="pt-20 pb-4 lg:pt-28 lg:min-h-screen"
                key='head' name='head'>
         <div className="container mx-auto px-8">
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap pt-8 md:lg-0">
             <div className="w-full lg:w-1/2 pb-5 lg:pb-0">
               <div className="flex flex-col items-center lg:items-start p-0 lg:pl-6">
                 <motion.h1
@@ -28,7 +28,7 @@ const User = () => {
                     initial="hidden"
                     animate="visible"
                     className="pb-6 g:pb-16 font-thin tracking-tight text-4xl lg:mt-16 lg:text-6xl xl:text-8xl">
-                  Vadim Borovyk
+                  Vadym Borovyk
                 </motion.h1>
 
                 <motion.span
@@ -64,7 +64,7 @@ const User = () => {
                     animate={{x: 0, opacity: 1}}
                     transition={{duration: 1, delay: 1.2}}
                     className="rounded-3xl h-1/2 w-1/2 relative z-0"
-                    src={userPicture} alt="Vadim Borovyk"/>
+                    src={userPicture} alt="Vadym Borovyk"/>
               </div>
             </div>
           </div>
