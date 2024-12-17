@@ -1,7 +1,7 @@
 import {motion} from "framer-motion";
 import {Element, Link} from 'react-scroll';
-import BlockInfo from "./BlockInfo.jsx";
 import {NAVBAR_LINKS} from "../../constants/index.js";
+import BlockInfo from "./BlockInfo.jsx";
 import SocialTab from "../Navbar/socialTab.jsx";
 import Lottie from "lottie-react";
 import animationData from "../../assets/Contacts.json";
