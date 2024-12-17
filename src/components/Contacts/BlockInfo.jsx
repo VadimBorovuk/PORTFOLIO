@@ -1,4 +1,3 @@
-import React from 'react';
 import {MdEmail} from "react-icons/md";
 import { FaFacebookMessenger } from "react-icons/fa";
 

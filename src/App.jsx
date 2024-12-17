@@ -4,7 +4,6 @@ import About from "./components/About.jsx";
 import Technologies from "./components/Technologies/Technologies.jsx";
 import Experience from "./components/Experience/Experience.jsx";
 import Projects from "./components/Projects/Projects.jsx";
-import Banner from "./components/Banner/Banner.jsx";
 import {useEffect, useState} from "react";
 import { FaArrowUp } from "react-icons/fa6";
 import {getBackgroundColor} from "./components/UI/Design.jsx";

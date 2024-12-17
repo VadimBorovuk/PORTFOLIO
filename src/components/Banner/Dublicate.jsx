@@ -1,4 +1,3 @@
-import React from 'react';
 import {SOCIAL_LIST} from "../../constants/index.js";
 import {getIconByStack} from "../UI/StackTechnologies.jsx";
 
