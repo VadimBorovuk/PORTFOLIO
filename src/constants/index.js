@@ -118,7 +118,7 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Portfolio",
+    title: "Personal Portfolio Website",
     image: project6,
     description: "This is a web portfolio that represents my professional skills and experience. Structured into several sections:\n" +
         "\n" +
@@ -133,11 +133,11 @@ export const PROJECTS = [
     git: "https://github.com/VadimBorovuk/PORTFOLIO"
   },
   {
-    title: "Movie app",
+    title: "Movie Discovery Platform",
     image: project1,
     description: "Full-featured app with movie list and user authentication and localization. With features like searching for a movie by title or getting a list of movies based on a specific filter criteria (genre, year, popularity), you can also share your movie filter with someone. There are also pages like popular, favorite and general movies. On the page of the selected film, you can view complete information about the film (title, year, cast, trailer). Nice viewing.",
     technologies: ["react", "redux-toolkit", "typescript", "i18next", "styledComponent", "materialUI"],
-    link: "https://react-movie-app-b84c4.web.app/",
+    link: "https://movieplatform-cd28a.web.app/",
     git: "https://github.com/VadimBorovuk/MovieApp_React"
   },
   {
