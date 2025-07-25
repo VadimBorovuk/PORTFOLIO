@@ -4,6 +4,7 @@ import project3 from "../assets/projects/pizza.jpg";
 import project4 from "../assets/projects/mogo.jpg";
 import project5 from "../assets/projects/Weather.jpg";
 import project6 from "../assets/projects/portfolio.jpg";
+import project7 from "../assets/projects/crmDashboard.jpg";
 
 export const USER_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Vue. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -117,6 +118,14 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "DropCRM Platform",
+    image: project7,
+    description: "Used Vue and Nuxt to build a fast and dynamic user interface. Implemented Vue Query for optimized data fetching and VeeValidate for reliable form validation. Managed state efficiently with Pinia, and created a clean, consistent UI using Shadcn components. Integrated backend functionality via AppWrite, and ensured long-term code maintainability using TypeScript.",
+    technologies: ["nuxt", "typescript", "pinia", "appwrite", "vuequery", "veevalidate", "tailwind", "shadcn"],
+    link: "https://exquisite-semolina-12e7ca.netlify.app/",
+    git: "https://github.com/VadimBorovuk/CRM_DASHBOARD"
+  },
   {
     title: "Personal Portfolio Website",
     image: project6,

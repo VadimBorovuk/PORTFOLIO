@@ -21,18 +21,21 @@ const ProjectBody = ({image, title, description, link, git, technologies}) => {
           </div>
 
           <div className="flex flex-auto flex-col justify-between pt-3">
-            <div className="flex flex-col xl:flex-row gap-4 flex-auto justify-start">
-              <div
-                  className="w-full p-3 xl:p-6 xl:w-1/5 flex justify-center items-center bg-neutral-800 font-bold tracking-tight rounded-xl text-md border border-neutral-700">
-                Stack
+            <div>
+              <div className="flex flex-col xl:flex-row gap-4 flex-auto justify-start">
+                <div
+                    className="w-full p-3 xl:p-6 xl:w-1/5 flex justify-center items-center bg-neutral-800 font-bold tracking-tight rounded-xl text-md border border-neutral-700">
+                  Stack
+                </div>
+                <div className="w-full xl:w-4/5 grid gap-3 grid-cols-2">
+                  {
+                    technologies.map((tech, idx) => (
+                        <ProjectTechnologies key={idx} tech={tech}/>
+                    ))
+                  }
+                </div>
               </div>
-              <div className="w-full xl:w-4/5 grid gap-3 grid-cols-2">
-                {
-                  technologies.map((tech, idx) => (
-                    <ProjectTechnologies key={idx} tech={tech}/>
-                  ))
-                }
-              </div>
+
             </div>
             <div className="mt-4 flex items-center justify-between">
               <a target="_blank"
