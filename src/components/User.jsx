@@ -2,7 +2,7 @@ import {USER_CONTENT} from "../constants/index.js";
 import {Element} from 'react-scroll';
 import {motion} from "framer-motion";
 
-import resumeFile from "../assets/resume/Frontend-2024_Eng_.pdf";
+import resumeFile from "../assets/resume/Fronted_Developer.pdf";
 import userPicture from '../assets/vadimBoroProfile.webp';
 
 const variantsSettings = (delay) => ({
@@ -15,7 +15,6 @@ const variantsSettings = (delay) => ({
 })
 
 const User = () => {
-  // lg:pb-14
   return (
       <Element className="pt-20 pb-4 lg:pt-28 lg:min-h-screen"
                key='head' name='head'>

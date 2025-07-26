@@ -21,7 +21,12 @@ export const TECHNOLOGIES_LIST = [
   'typescript',
   'node',
   'express',
-  'mongoDB'
+  'mongoDB',
+  'pinia',
+  'nuxt',
+  'appwrite',
+  'vuequery',
+  'veevalidate'
 ]
 
 export const SOCIAL_LIST = [
@@ -54,7 +59,13 @@ export const SOCIAL_LIST = [
   'telegram',
   'messenger',
   'instagram',
-  'firebase'
+  'firebase',
+  'pinia',
+  'nuxt',
+  'appwrite',
+  'vuequery',
+  'veevalidate',
+  'shadcn'
 ]
 
 export const NAVBAR_LINKS = [
