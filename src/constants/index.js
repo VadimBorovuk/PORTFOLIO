@@ -5,6 +5,8 @@ import project4 from "../assets/projects/mogo.jpg";
 import project5 from "../assets/projects/Weather.jpg";
 import project6 from "../assets/projects/portfolio.jpg";
 import project7 from "../assets/projects/crmDashboard.jpg";
+import chatty from "../assets/projects/chatty.png";
+import blogify from "../assets/projects/blogify.png";
 
 export const USER_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Vue. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -21,6 +23,9 @@ export const TECHNOLOGIES_LIST = [
   'typescript',
   'node',
   'express',
+  'zustand',
+  'daisyui',
+  'socket',
   'mongoDB',
   'pinia',
   'nuxt',
@@ -55,6 +60,9 @@ export const SOCIAL_LIST = [
   'gitlab',
   'github',
   'djinni',
+  'daisyui',
+  'zustand',
+  'socket',
   'linkedin',
   'telegram',
   'messenger',
@@ -129,6 +137,25 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
+  {
+    title: "Blogify",
+    image: blogify,
+    description: "A feature-rich MEVN CRUD Blog App built with TypeScript for better scalability, maintainability, and developer experience. 🧠\n" +
+        "The app allows users to create, read, update, and delete blog posts effortlessly using a clean and modern Vue 3 interface powered by TailwindCSS. All operations are backed by a secure Express + MongoDB API with JWT authentication for safe user access.\n" +
+        "With Socket.io integration, posts and comments update in real time, keeping every user instantly synced without page refreshes.\n" +
+        "The app also includes form validation, error handling, and a fully responsive UI that adapts to any device.",
+    technologies: ["vue", "typescript", "pinia", "daisyui", "socket", "tailwind", "node", "mongoDB", "express"],
+    link: "https://mevn-blog-app.onrender.com/",
+    git: "https://github.com/VadimBorovuk/MEVN-BLOG-APp"
+  },
+  {
+    title: "Chatty",
+    image: chatty,
+    description: "Real-Time Chat App built with the powerful MERN stack, featuring a modern and responsive UI powered by TailwindCSS and DaisyUI. Enjoy secure authentication and authorization using JWT, seamless real-time messaging with Socket.io, and live online user status updates. The app leverages Zustand for clean and efficient global state management, while ensuring robust error handling on both client and server sides",
+    technologies: ["react", "tailwind", "zustand", "daisyui", "socket", "node", "mongoDB", "express"],
+    link: "https://chatreactio.onrender.com/",
+    git: "https://github.com/VadimBorovuk/ChatReactIO"
+  },
   {
     title: "DropCRM Platform",
     image: project7,

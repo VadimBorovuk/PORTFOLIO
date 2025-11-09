@@ -2,14 +2,15 @@ import {TiHtml5} from "react-icons/ti";
 import {IoLogoCss3} from "react-icons/io";
 import {RiTailwindCssFill} from "react-icons/ri";
 import {TbBrandJavascript} from "react-icons/tb";
-import {FaGithub, FaGoogle, FaLinkedin, FaNodeJs, FaReact, FaTelegramPlane, FaVuejs} from "react-icons/fa";
-import {SiExpress, SiMongodb,SiFramer, SiTypescript,SiCreatereactapp, SiRedux, SiI18Next, SiStyledcomponents, SiMui,SiVuetify, SiSass, SiAppwrite, SiVeed, SiShadcnui} from "react-icons/si";
+import {FaGithub, FaGoogle, FaLinkedin, FaNodeJs, FaReact, FaTelegramPlane, FaVuejs, FaSun} from "react-icons/fa";
+import {SiExpress, SiMongodb,SiFramer, SiTypescript,SiCreatereactapp, SiRedux, SiI18Next, SiStyledcomponents, SiMui,SiVuetify, SiSass, SiAppwrite, SiVeed, SiShadcnui, SiZulip, SiSocketdotio} from "react-icons/si";
 import { MdSettingsApplications } from "react-icons/md";
 import { PiMouseScroll } from "react-icons/pi";
 import {GiDjinn, GiPineapple, GiPalmTree} from "react-icons/gi";
 import {FaInstagram} from "react-icons/fa6";
 import { IoLogoFirebase } from "react-icons/io5";
 import { TbBrandNuxt } from "react-icons/tb";
+
 
 export const getIconByStack = (item) => {
   switch (item) {
@@ -79,12 +80,18 @@ export const getIconByStack = (item) => {
       return <GiPineapple title={item} className="text-yellow-400"/>
     case 'appwrite':
       return <SiAppwrite title={item} className="text-red-400"/>
+    case 'zustand':
+      return <SiZulip title={item} className="text-orange-500"/>
     case 'vuequery':
       return <GiPalmTree title={item} className="text-yellow-500"/>
+    case 'daisyui':
+      return <FaSun title={item} className="text-yellow-500"/>
     case 'veevalidate':
       return <SiVeed title={item} className="text-green-600"/>
     case 'shadcn':
       return <SiShadcnui title={item} className="text-gray-50"/>
+    case 'socket':
+      return <SiSocketdotio title={item} className="text-gray-50"/>
     default:
       return <></>
   }
